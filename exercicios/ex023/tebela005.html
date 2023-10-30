@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        
+        }
+        table{
+                width: 500px;
+                border-collapse: collapse;
+            }
+        caption{
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .destaque{
+            background-color: green;
+        }
+        .cnome{
+            background-color: greenyellow;
+        }
+        col.cgrupo{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="cgrupo" span="2">
+        <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria </td>
+            <td>F</td>
+            <td>25</td>
+            <td>Joranalista</td>
+        </tr>
+        <tr>
+            <td>francisca </td>
+            <td>F</td>
+            <td>56</td>
+            <td>demostica</td>
+        </tr>
+        <tr>
+            <td>Maria </td>
+            <td>F</td>
+            <td>25</td>
+            <td>gamer</td>
+        </tr>
+        <tr>
+            <td>helio</td>
+            <td>m</td>
+            <td>22</td>
+            <td>programador</td>
+        </tr>
+        <tr>
+            <td>luis </td>
+            <td>m</td>
+            <td>21</td>
+            <td>clt</td>
+        </tr>
+
+    </table>
+</body>
+</html>
